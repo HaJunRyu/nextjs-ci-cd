@@ -16,6 +16,8 @@ jobs:
           node-version: '14.x'
       - name: Install NPM dependencies
         run: npm install
+      - name: serverless cli install
+        run: npm install -g @serverless/cli
       - name: serverless install
         run: npm install -g serverless
       - name: Configure AWS Credentials
